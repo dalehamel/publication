@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
     'https://github.com/dalehamel/publication'
   s.license = 'MIT'
   s.add_runtime_dependency 'pandoc-ruby', ['>= 2.0.0']
+  s.add_runtime_dependency 'thor', ['>= 0.19.1']
   s.add_development_dependency 'pry', ['=0.10.3']
   s.add_development_dependency 'pry-byebug', ['=3.3.0']
   s.add_development_dependency 'rake', ['=10.4.2']
