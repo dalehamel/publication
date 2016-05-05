@@ -1,4 +1,4 @@
-require 'pandoc-ruby'
+require 'ruby-pandoc'
 
 module Publication
   class Publisher
@@ -14,7 +14,7 @@ module Publication
 
     def publish
       @formats.each do |format|
-        PandocRuby.new(@paths, from: @type, output: "#{@output}.#{format}").convert
+        RubyPandoc::Converter.new(@paths, from: @type, output: "#{@output}.#{format}").convert
       end
     end
   end
