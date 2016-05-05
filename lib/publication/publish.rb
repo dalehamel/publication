@@ -15,7 +15,7 @@ module Publication
 
     def publish
       @formats.each do |format|
-        RubyPandoc::Converter.new(@paths, from: @type, output: "#{@output}.#{format}", extra: extraopts).convert
+        RubyPandoc::Converter.new(@paths, from: @type, output: "#{@output}.#{format}", extra: @extraopts).convert
       end
     end
   end
