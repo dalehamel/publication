@@ -1,5 +1,8 @@
+
+require 'bundler/gem_tasks'
+require 'publication/rake_tasks'
+
 begin
-  require 'bundler/gem_tasks'
   require 'rspec/core/rake_task'
 
   RSpec::Core::RakeTask.new(:spec)
