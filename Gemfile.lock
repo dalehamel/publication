@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    publication (0.0.3)
+    publication (0.0.4)
       activesupport (= 4.2.5)
       rake (= 10.4.2)
       ruby-pandoc (>= 0.0.5)
