@@ -5,6 +5,12 @@ class Publication::CLI < Thor
 
   desc 'init', 'Initialize a standard template for the publication'
   def init
+    Publication::Setup.init
+  end
+
+  desc 'spellcheck', 'Spellcheck the your markdown'
+  def spellcheck
+    Publication::Spellchecker.check
   end
 
   desc 'publish', 'Create a new publication of the desired format'

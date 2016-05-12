@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'thor', ['>= 0.19.1']
   s.add_runtime_dependency 'rake', ['=10.4.2']
   s.add_runtime_dependency 'activesupport', ['=4.2.5']
+  s.add_runtime_dependency 'mdspell', ['=0.2.0']
   s.add_development_dependency 'pry', ['=0.10.3']
   s.add_development_dependency 'pry-byebug', ['=3.3.0']
   s.add_development_dependency 'simplecov', ['=0.10.0']
