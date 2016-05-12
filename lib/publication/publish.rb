@@ -4,7 +4,7 @@ module Publication
   class Publisher
 
     def initialize(paths: nil, type: nil, output: nil, formats: [], extraopts: nil)
-      @paths = Dir["#{Dir.pwd}/#{paths}"]
+      @paths = Dir["#{Dir.pwd}/#{paths}"].sort
       @type = type
       @output = output
       @formats = formats
@@ -15,6 +15,7 @@ module Publication
 
     def publish
       @formats.each do |format|
+        puts @paths
         RubyPandoc::Converter.new(@paths, from: @type, output: "#{@output}.#{format}", extra: @extraopts).convert
       end
     end

@@ -3,7 +3,7 @@ module Publication
     extend self
 
     def check
-      files = Dir['doc/**/*'].map { |f| f if File.file?(f) }
+      files = Dir['./**/*'].map { |f| f if File.file?(f) }
       puts `bundle exec mdspell #{files.join(' ')} #{"-c .mdspell.config" if File.exists?('.mdspell.config')}`
     end
   end
