@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    publication (0.0.7)
+    publication (0.0.8)
       activesupport (= 4.2.5)
       mdspell (= 0.2.0)
       rake (= 10.4.2)
